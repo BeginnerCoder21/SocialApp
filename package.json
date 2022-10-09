@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "node index",
     "start": "nodemon index.js",
+    "postinstall": "semantic-ui-css-patch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,6 +19,10 @@
     "graphql": "^16.6.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.6.1",
-    "PubSub": "^4.0.0"
+    "PubSub": "^4.0.0",
+    "react-hooks": "^1.0.1",
+    "react-router-dom": "^6.4.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.3"
   }
 }
