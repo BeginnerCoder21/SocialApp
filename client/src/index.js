@@ -1,9 +1,7 @@
 import React from 'react';
 import App from './App';
 import ReactDOM from 'react-dom/client';
-import * as serviceWorker from './serviceWorker';
 import reportWebVitals from './reportWebVitals';
-import ApolloProvider from './ApolloProvider';
 
 
 // ReactDOM.render(ApolloProvider, document.getElementById('root'));
