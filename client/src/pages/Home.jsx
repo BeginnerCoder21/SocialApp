@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 // import { useQuery } from '@apollo/react-hooks';
-import { ApolloProvider, ApolloClient, useQuery } from '@apollo/client';
 import { Button, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "../components/NavBar";
-import gql from "graphql-tag";
-import { FETCH_POSTS_QUERY } from '../util/graphql';
+import axios from 'axios';
+import { useQuery } from "@apollo/client";
+import { FETCH_POSTS_QUERY } from '../util/graphql.js';
 
 function Home () {
   const {
