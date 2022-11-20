@@ -8,7 +8,13 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import CardGroup from 'react-bootstrap/CardGroup';
 
-function PostCard({ post: { body, createdAt, id, username, likeCount } }) {
+function PostCard({ post: { body, createdAt, id, username, likeCount,commentCount } }) {
+    function likePost(){
+        console.log("Like Post");
+    }
+    function commentPost(){
+        console.log("Comment on post");
+    }
     return (
         <Row xs={2} md={3} className="g-4">
             {Array.from({ length: 4 }).map((_, idx) => (
@@ -25,8 +31,8 @@ function PostCard({ post: { body, createdAt, id, username, likeCount } }) {
                                 {body}
                             </Card.Text>
                             <Card.Body>
-                                <Button variant="primary">Like {likeCount}</Button>
-                                <Button variant="primary">Comment</Button>
+                                <Button variant="primary" onClick={likePost}>Like {likeCount}</Button>
+                                <Button variant="primary" onClick={commentPost}>Comment  {commentCount}</Button>
                             </Card.Body>
                         </Card.Body>
                     </Card>
